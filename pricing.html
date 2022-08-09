@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | TimesNow</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./Assets/Logo.svg" type="image/x-icon">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="navigation__links">
+            <img src="./Assets/Logo.svg" alt="" class="navigation__logo">
+            <button class="navigation__btn" id="menu-btn"><img src="./Assets/Hamburger Menu.svg" alt=""></button>
+            <ul class="navigation__list">
+                <li class="navigation__list-item">
+                    <a href="#" class="navigation__list-link">features</a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="./pricing.html" class="navigation__list-link navigation__list-link--actual">pricing</a>
+                </li>
+                <li class="navigation__btn--phone">
+                    <a href="#" class="btn">start scheduling</a>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="btn navigation__btn--pc">start scheduling</a>
+    </nav> 
+    <section class="section">
+        <header class="section__zone">
+            <h1 class="section__title">Flexible Plans for Everyone.</h1>
+            <p class="section__description">Our plans are made for everyone. Wheather you´re just starting out on social media, or have been on there for a long time, we have a plan that´s rigth for you.</p>
+            <input type="radio" name="" id="">
+        </header>
+
+        <ul class="pricings">
+            <li class="price">
+                <h3 class="price__number">$4 <span>/mo</span></h3>
+                <p class="price__description">Prefect plan if you´re just starting out.</p>
+                <div class="line"></div>
+                <ul class="list">
+                    <li class="list__item">
+                        <span class="checkmark"></span> Linkdln Integration
+                    </li>
+                    <li class="list__item">
+                        <span class="checkmark"></span> Twitter Integration
+                    </li>
+                    <li class="list__item">
+                        <span class="checkmark"></span> Real-time Analytics
+                    </li>
+                </ul>
+                <button class="btn">Subcribe now</button>
+            </li>
+            <li class="price price--big">
+                <h3 class="price__number">$12 <span>/mo</span></h3>
+                <p class="price__description">Prefect plan if you´re heavy user of social media.</p>
+                <div class="line"></div>
+                <ul class="list">
+                    <li class="list__item">
+                        <span class="checkmark"></span> Linkdln Integration
+                    </li>
+                    <li class="list__item">
+                        <span class="checkmark"></span> Twitter Integration
+                    </li>
+                    <li class="list__item">
+                        <span class="checkmark"></span> Instagram Integration
+                    </li>
+                    <li class="list__item">
+                        <span class="checkmark"></span> Real-time Analytics
+                    </li>
+                </ul>
+                <button class="btn">Subcribe now</button>
+            </li>
+            <li class="price">
+                <h3 class="price__number">$7 <span>/mo</span></h3>
+                <p class="price__description">Prefect plan if you´re just starting out.</p>
+                <div class="line"></div>
+                <ul class="list">
+                    <li class="list__item">
+                        <span class="checkmark"></span> Linkdln Integration
+                    </li>
+                    <li class="list__item">
+                        <span class="checkmark"></span> Twitter Integration
+                    </li>
+                </ul>
+                <button class="btn">Subcribe now</button>
+            </li>
+            
+        </ul>
+    </section>
+    <footer class="footer">
+        <img src="./Assets/Logo.svg" alt="" class="footer__logo">
+        <div class="footer__content">
+            <div class="footer__lists">
+                <ul class="footer__list">
+                    <li class="footer__list-header">product</li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">homepage</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">pricing</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">features</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-header">help</li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">live chat</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">send email</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">FAQ</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-header">company</li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">about</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">customers</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">blog</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <form class="footer__form">
+                <label for="email" class="footer__form-label">try tweetNow</label>
+                <input type="email" name="email" id="email" class="footer__form-input" placeholder="Email Address">
+                <button type="submit" class="btn btn-absolute">start scheduling</button>
+            </form> -->
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn')
+
+        menuBtn.addEventListener('click', () => {
+            document.querySelector('.navigation__list').classList.toggle('navigation__list--show')
+        })
+    </script>
+</body>
+</html>
